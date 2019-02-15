@@ -1,0 +1,327 @@
+  <html class="no-js" lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Taller 1 - Foundation</title>
+
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-2195009-2', 'auto');
+        ga('send', 'pageview');
+
+        ga('create', 'UA-2195009-27', 'auto', {name: "foundation"});
+        ga('foundation.send', 'pageview');
+
+      </script>
+
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Menú</li>
+        </ul>
+      </div>
+    <div class="top-bar-center">
+      <ul class="menu">
+        <li><a href="#">Opción 1</a></li>
+        <li><a href="#">Opción 2</a></li>
+        <li><a href="#">Opción 3</a></li>
+        <li><a href="#">Opción 4</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Buscar"></li>
+        <li><button type="button" class="button">Buscar</button></li>
+      </ul>
+    </div>
+    </div>
+
+  <hr>
+
+    <h3>Slider</h3>
+    <div class="slider" data-slider data-initial-start="25" data-initial-end="75">
+      <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+      <span class="slider-fill" data-slider-fill></span>
+      <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <input type="hidden">
+        <input type="hidden">
+    </div>
+
+  <hr>
+
+    <div class="row" id="content">
+        <h3>Imagen<small></small></h3>
+          <img class="thumbnail" src="../images/1.jpg">
+          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+
+  <hr>
+
+      <div class="callout secondary">
+        <h5>Callout</h5>
+        <p>Es una alerta visual</p>
+      </div>
+    
+
+  <hr>
+
+    <div class="card" style="width: 300px;">
+      <div class="card-divider">
+        <section style="text-align: center;"></section> <!-- Revisar Porque no Centra-->
+          <h4>Card</h4>
+      </div>
+        <img src="../images/6.jpg">
+      <div class="card-section">
+        <p>Son un componente para el interfaz de usuario popular y flexible</p>
+      </div>
+    </div>
+
+<hr>
+    
+    <h3>Dropdown</h3>
+    <button class="button" type="button" data-toggle="example-dropdown">Ingrese Nombres</button>
+    <div class="dropdown-pane" id="example-dropdown" data-dropdown data-auto-focus="true">
+    Ejemplo de Dropdown.
+      <form>
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <div class="cell medium-6">
+              <label>Nombre
+                <input type="text" placeholder="Ingrese Nombre">
+              </label>
+            </div>
+            <div class="cell medium-6">
+              <label>Apellido
+                <input type="text" placeholder="Ingrese Apellido">
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <button class="button" type="button" data-toggle="example-dropdown-1">Dropdown</button>
+    <div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+    Es un panel que se revelan con dar click o al desplazarse por encima de ellos.
+    </div>
+
+<hr>
+
+    <h3>Media Object</h3>
+    <div class="media-object">
+      <div class="media-object-section">
+        <div class="thumbnail">
+          <img src= "../images/taller1.png" width="150" height="100">
+        </div>
+      </div>
+      <div class="media-object-section">
+        <h4>Primer Ejemplo</h4>
+        <p>Son Componentes útiles para mostrar elementos, generalmente imagenes acompañado de un texto.</p>
+        <!-- Nested media object starts here -->
+        <div class="media-object">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src= "../images/taller2.png" width="150" height="100">
+            </div>
+          </div>
+          <div class="media-object-section">
+            <h4>Segundo Ejemplo</h4>
+            <p>Segundo Ejemplo de Media Object</p>
+          </div>
+        </div>
+        <!-- And ends here -->
+      </div>
+    </div>
+
+<hr>
+
+    <h3>Reveal</h3>
+    <p><button class="button" data-open="exampleModal2">Click Para saber que es</button></p>
+    <!-- This is the first modal -->
+    <div class="reveal" id="exampleModal2" data-reveal>
+      <h1>Que es un Reveal!</h1>
+      <p class="lead">Son ventanas emergentes para realizar presentaciónes con HTML de una manera facil.</p>
+      <button class="button" data-open="exampleModal3">Otro Ejemplo</button>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <!-- This is the nested modal -->
+    <div class="reveal" id="exampleModal3" data-reveal>
+      <h2>Este es otro ejemplo</h2>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+<hr>
+
+    <h3>Tabla</h3>
+    <table>
+      <thead>
+        <tr>
+          <th width="200">Titulo 1</th>
+          <th>Titulo 2</th>
+          <th width="150">Titulo 3</th>
+          <th width="150">Titulo 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Campo 1</td>
+          <td>Campo 2</td>
+          <td>Campo 3</td>
+          <td>Campo 4</td>
+        </tr>
+        <tr>
+          <td>Campo 5</td>
+          <td>Campo 6</td>
+          <td>Campo 7</td>
+          <td>Campo 8</td>
+        </tr>
+        <tr>
+          <td>Campo 9</td>
+          <td>Campo 10</td>
+          <td>Campo 11</td>
+          <td>Campo 12</td>
+        </tr>
+      </tbody>
+    </table>
+
+<hr>
+
+    <h3>Tabs</h3>
+    <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+      <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Que son?</a></li>
+      <li class="tabs-title"><a href="#panel2c">Ejemplo con Tabla</a></li>
+      <li class="tabs-title"><a href="#panel3c">Ejemplo con Imagen</a></li>
+      <li class="tabs-title"><a href="#panel4c">Otro Ejemplo</a></li>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+      <div class="tabs-panel is-active" id="panel1c">
+        <p>Son elementos que ayudan a organizar y navegar por multiples documentos en el mismo contenedor.</p>
+      </div>
+      <div class="tabs-panel" id="panel2c">
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Titulo 1</th>
+              <th>Titulo 2</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Campo 1</td>
+              <td>Campo 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabs-panel" id="panel3c">
+        <img class="thumbnail" src="../images/7.jpg" width="500" height="500" >
+      </div>
+      <div class="tabs-panel" id="panel4c">
+        <p>Este es otro ejemplo</p>
+      </div>
+    </div>
+
+<hr>
+    
+    <h3>Labels</h3>
+    <span class="label primary">Label Azul</span>
+    <span class="label secondary">Label Gris</span>
+    <span class="label success">Label Verde</span>
+    <span class="label alert">Label Rojo</span>
+    <span class="label warning">Label Amarillo</span>
+
+<hr>
+
+    <h3>Switch</h3>
+    <p>Te gusta el Contenido de la Página?</p>
+    <div class="switch large">
+      <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+      <label class="switch-paddle" for="yes-no">
+        <span class="show-for-sr">Do you like me?</span>
+        <span class="switch-active" aria-hidden="true">Si</span>
+        <span class="switch-inactive" aria-hidden="true">No</span>
+      </label>
+    </div>
+
+<hr>
+
+    <h3>Responsive Navigation</h3>
+    <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+      <li>
+        <a href="#">Item 1</a>
+        <ul class="vertical menu">
+          <li>
+            <a href="#">Item 1A</a>
+            <ul class="vertical menu">
+              <li><a href="#">Item 1.1</a></li>
+              <li><a href="#">Item 1.2</a></li>
+              <li><a href="#">Item 1.3</a></li>
+              <li><a href="#">Item 1.4</a></li>
+              <li><a href="#">Item 1.5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Item 1B</a></li>
+        </ul>
+      </li>
+    </ul>
+
+<hr>
+
+    <h3>Progress</h3>
+    <div class="secondary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+      <div class="progress-meter" style="width: 25%"></div>
+    </div>
+
+    <div class="success progress">
+      <div class="progress-meter" style="width: 50%"></div>
+    </div>
+
+    <div class="warning progress">
+      <div class="progress-meter" style="width: 50%"></div>
+    </div>
+
+    <div class="alert progress">
+      <div class="progress-meter" style="width: 75%"></div>
+    </div>
+
+<hr>
+
+    </div>
+    <nav aria-label="Pagination">
+      <ul class="pagination text-center">
+        <li class="pagination-previus"><a href="#" aria-label="Previus Page">Anterior</a></li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page">Despues</a></li>
+      </ul>
+    </nav>
+
+  <hr>
+
+  <script src="bower_components/jquery/dist/jquery.js?hash=c49047dde69a9cb7a50ca40493937357"></script>
+  <script src="bower_components/what-input/what-input.js?hash=7bb7fea252899152ca0173913a02f1eb"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js?hash=91fea43a73487cc87eaf15f88cfe1529"></script>
+  <script src="js/app.js?hash=69ec9e4a5c39f580d627486494fdbb8c"></script>
+  </body>
+  </html>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script>
+        $(document).foundation();
+      </script>
+  </body>
+  </html>
